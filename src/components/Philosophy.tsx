@@ -23,7 +23,7 @@ const Philosophy = () => {
         style={{ y: textY }}
         className="absolute inset-0 flex items-center justify-center opacity-[0.1] select-none pointer-events-none"
       >
-        <span className="text-[30vw] font-black uppercase italic tracking-tighter text-white whitespace-nowrap">
+        <span className="text-[30vw] font-black uppercase italic tracking-tighter text-black whitespace-nowrap">
           EXPERIENCIA • MEMORIA • IMPACTO
         </span>
       </motion.div>
@@ -43,13 +43,13 @@ const Philosophy = () => {
               viewport={{ once: true }}
               className="mb-12 p-5 bg-white/10 backdrop-blur-xl rounded-[2rem] border border-white/20 shadow-2xl"
             >
-              <Quote className="w-10 h-10 md:w-16 md:h-16 text-white fill-white" />
+              <Quote className="w-10 h-10 md:w-16 md:h-16 text-black fill-black" />
             </motion.div>
 
             {/* Título Monumental - Corregido para Visibilidad Máxima */}
             <h2 className="text-6xl md:text-8xl lg:text-[10rem] font-black mb-12 leading-[0.8] tracking-tighter uppercase italic">
               NO HACEMOS <br />
-              <span className="text-white drop-shadow-[0_20px_50px_rgba(255,255,255,0.4)]">ANUNCIOS.</span>
+              <span className="text-black drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)]">ANUNCIOS.</span>
             </h2>
 
             {/* Línea Divisoria de Diseño */}
@@ -57,13 +57,13 @@ const Philosophy = () => {
               initial={{ width: 0 }}
               whileInView={{ width: 160 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="h-3 bg-white mb-16 rounded-full" 
+              className="h-3 bg-black mb-16 rounded-full" 
             />
 
             {/* Cuerpo del Manifiesto con Resaltado */}
             <p className="text-2xl md:text-4xl lg:text-5xl font-black leading-[1.1] max-w-5xl tracking-tight uppercase">
-              Creamos <span className="bg-white text-accent px-6 py-2 italic rounded-2xl shadow-xl inline-block my-2">IMPACTO.</span> <br />
-              Cada activación está diseñada para que las personas participen, sientan y <span className="text-white/70">recuerden.</span>
+              Creamos <span className="bg-white text-black px-6 py-2 italic rounded-2xl shadow-xl inline-block my-2">IMPACTO.</span> <br />
+              Cada activación está diseñada para que las personas participen, sientan y <span className="text-black/70">recuerden.</span>
             </p>
 
             {/* Cierre de Impacto con Animación de Entrada */}
@@ -73,7 +73,7 @@ const Philosophy = () => {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="mt-20 pt-10 border-t-4 border-white/20"
             >
-              <span className="text-white font-black text-xl md:text-4xl uppercase tracking-[0.1em] italic">
+              <span className="text-black font-black text-xl md:text-4xl uppercase tracking-[0.1em] italic">
                 Porque cuando una marca se vive, se queda.
               </span>
             </motion.div>

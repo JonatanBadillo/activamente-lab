@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { ChevronRight, Activity, Menu, X, Mail } from 'lucide-react';
+import { ChevronRight, Menu, X, Mail } from 'lucide-react';
+import logoSrc from '../images/logo-removebg.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,6 +42,7 @@ const Navbar = () => {
     { name: 'Solución', href: '#solucion' },
     { name: 'Servicios', href: '#servicios' },
     { name: 'Casos', href: '#casos' },
+    { name: 'Galería', href: '#galeria' },
     { name: 'Nosotros', href: '#diferenciadores' },
   ];
 
@@ -73,11 +75,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2 group shrink-0 z-50"
             >
-              <div className="relative">
-                <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center transform group-hover:rotate-[15deg] transition-all">
-                  <Activity className="w-5 h-5 text-white animate-pulse" />
-                </div>
-              </div>
+              <img src={logoSrc} alt="Activamente Lab Logo" className="h-24 w-auto" />
               <span className="text-xl font-black tracking-tighter text-white uppercase italic">
                 Activamente<span className="text-accent">Lab.</span>
               </span>

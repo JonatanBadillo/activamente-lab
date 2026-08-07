@@ -6,6 +6,7 @@ import Problem from './components/Problem';
 import Solution from './components/Solution';
 import Services from './components/Services';
 import CaseStudy from './components/CaseStudy';
+import Carousel from './components/Carousel';
 import Philosophy from './components/Philosophy';
 import Differentiator from './components/Differentiator';
 import CTA from './components/CTA';
@@ -52,6 +53,7 @@ function App() {
         <Solution />
         <Services />
         <CaseStudy />
+        <Carousel />
         <Philosophy />
         <Differentiator />
         <CTA />
